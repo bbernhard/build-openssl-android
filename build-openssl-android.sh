@@ -28,7 +28,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
 
  ANDROID_LIB_ROOT=../openssl-lib
  ANDROID_TOOLCHAIN_DIR=/tmp/android-toolchain
- OPENSSL_CONFIGURE_OPTIONS=""
+ OPENSSL_CONFIGURE_OPTIONS="-fPIC"
 
  HOST_INFO=`uname -a`
  case ${HOST_INFO} in
@@ -138,5 +138,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
 
      mv libcrypto.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
      mv libssl.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
+     mv libcrypto.so ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
+     mv libssl.so ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
  done 
 )

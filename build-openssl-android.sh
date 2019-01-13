@@ -28,13 +28,7 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
 
  ANDROID_LIB_ROOT=../openssl-lib
  ANDROID_TOOLCHAIN_DIR=/tmp/android-toolchain
- OPENSSL_CONFIGURE_OPTIONS="no-pic no-krb5 no-idea no-camellia \
-        no-seed no-bf no-cast no-rc2 no-rc4 no-rc5 no-md2 \
-        no-md4 no-ripemd no-rsa no-ecdh no-sock no-ssl2 no-ssl3 \
-        no-dsa no-dh no-ec no-ecdsa no-tls1 no-pbe no-pkcs \
-        no-tlsext no-pem no-rfc3779 no-whirlpool no-ui no-srp \
-        no-ssltrace no-tlsext no-mdc2 no-ecdh no-engine \
-        no-tls2 no-srtp -fPIC"
+ OPENSSL_CONFIGURE_OPTIONS=""
 
  HOST_INFO=`uname -a`
  case ${HOST_INFO} in

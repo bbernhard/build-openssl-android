@@ -2,7 +2,7 @@
 
 MINIMUM_ANDROID_SDK_VERSION=$1
 MINIMUM_ANDROID_64_BIT_SDK_VERSION=$2
-OPENSSL_FULL_VERSION="openssl-1.1.0h"
+OPENSSL_FULL_VERSION=$3
 
 if [ ! -f "$OPENSSL_FULL_VERSION.tar.gz" ]; then
     curl -O https://www.openssl.org/source/$OPENSSL_FULL_VERSION.tar.gz

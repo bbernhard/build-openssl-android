@@ -136,9 +136,6 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
          exit 1
      fi
 
-     mv libcrypto.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
-     mv libssl.a ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
-     mv libcrypto.so ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
-     mv libssl.so ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
+     mv * ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
  done 
 )

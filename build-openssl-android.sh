@@ -136,6 +136,6 @@ tar -xvzf $OPENSSL_FULL_VERSION.tar.gz
          exit 1
      fi
 
-     mv * ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
+     mv ./* ${ANDROID_LIB_ROOT}/${PLATFORM_OUTPUT_DIR}
  done 
 )
